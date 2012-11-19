@@ -31,7 +31,7 @@ TARGET_BOARD_PLATFORM := msm7x27
 TARGET_SPECIFIC_HEADER_PATH := device/zte/msm7x27-common/include
 
 # Recovery
-BOARD_CUSTOM_GRAPHICS := ../../../device/zte/msm7x27-common/recovery/graphics.c
+#BOARD_CUSTOM_GRAPHICS := ../../../device/zte/msm7x27-common/recovery/graphics.c
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/zte/msm7x27-common/recovery/recovery_ui.c
 
 # Kernel
