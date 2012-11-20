@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 
+# Overlay
 DEVICE_PACKAGE_OVERLAYS := device/zte/msm7x27-common/overlay
 
 # AAPT
@@ -32,8 +33,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm7x27 \
-    LegacyCamera
+    camera.msm7x27
 
 # Display
 PRODUCT_PACKAGES += \
@@ -78,3 +78,6 @@ PRODUCT_COPY_FILES += \
          frameworks/native/data/etc/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
          frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
          frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+
+#$(call inherit-product, device/zte/msm7x27-common/prop.mk)
+$(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
